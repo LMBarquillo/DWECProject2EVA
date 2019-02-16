@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/jquery-ui.structure.min.css">		
 		<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/responsive.css">
     </head>
@@ -23,34 +23,32 @@
         <header class="main_menu_area">
             <div class="header_top">
                 <div class="container">
-					<div class="row">
-						<div class="col-6 pull-left">
-							<a href="tel:+34666000000"><i class="fas fa-phone"></i>(+34) 666 000 000</a>
-							<a href="mailto:luismi@fakemail.com"><i class="fas fa-envelope"></i>Escríbenos</a>
-						</div>
-						<div class="col-6 pull-right ralign">
-							<ul class="header_social">
-								<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-							</ul>
-						</div>					
-					</div>                    
+					<div class="pull-left">
+						<a href="tel:+34666000000"><i class="fas fa-phone"></i>(+34) 666 000 000</a>
+						<a href="mailto:luismi@fakemail.com"><i class="fas fa-envelope"></i>Escríbenos</a>
+					</div>
+					<div class="pull-right ralign">
+						<ul class="header_social">
+							<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+					</div>					
                 </div>
             </div>
             <div class="menu_inner_area">
                 <div class="container">
                     <nav class="navbar navbar-default">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
                                 <span class="sr-only">Navegación móvil</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.php"><img src="img/logo-white.png" alt=""></a>
+                            <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt=""></a>
                         </div>
 
-                        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li>
                                     <a href="index.html">Inicio</a>
@@ -222,52 +220,40 @@
         <section class="testimonials_area">
             <div class="container">
                 <div class="testi_inner" data-title="Expertos">
-                    <div id="testimonial_slider" class="testimonial_slider owl-carousel">
-                        <div class="item testimonial_item">
+                    <div class="row testimonial_slider ">
+                        <div class="col-md-4 item testimonial_item">
                             <p><img src="img/quoto-1.png" alt="">Un alto porcentaje de empresas cree estar adecuada sin saber que, a partir del Reglamento Europeo, toda la normativa ha cambiado y han de ponerse al día.</p>
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="img/testimonials-4.png" alt="RJ">
+                                    <img id="testimonial1" src="img/testimonials-4.png" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Alicia Delgado</h4>
-                                    <h5>Abogada especialista en nuevas tecnologias y seguridad de la informacion</h5>
+                                    <h4 id="testimonial-name1"></h4>
+                                    <h5 id="testimonial-title1">Abogada especialista en nuevas tecnologias y seguridad de la informacion</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="item testimonial_item">
+                        <div class="col-md-4 item testimonial_item">
                             <p><img src="img/quoto-1.png" alt="">El eslabón más débil de la seguridad es el usuario, por eso dedicamos grandes esfuerzos a la formación y concienciación en custodia de datos.</p>
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="img/testimonials-3.png" alt="LB">
+                                    <img id="testimonial2" src="img/testimonials-3.png" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Andrés Sevilla</h4>
-                                    <h5>Experto en Tecnologías de la Información</h5>
+                                    <h4 id="testimonial-name2"></h4>
+                                    <h5 id="testimonial-title2">Experto en Tecnologías de la Información</h5>
                                 </div>
                             </div>
                         </div>
-						<div class="item testimonial_item">
+						<div class="col-md-4 item testimonial_item">
                             <p><img src="img/quoto-1.png" alt="">Nuestros clientes saben que nuestra atención es lo primero y por eso confían en nosotros. El área privada les permite disponer de documentación inmediata.</p>
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="img/testimonials-2.png" alt="MF">
+                                    <img id="testimonial3" src="img/testimonials-2.png" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <h4>Patricia Santamaría</h4>
-                                    <h5>Att. Cliente y contratación</h5>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item testimonial_item">
-                            <p><img src="img/quoto-1.png" alt="">Llevamos más de 10 años prestando servicios jurídicos. Nuestra experiencia constata nuestra profesionalidad y nuestros clientes son los beneficiados.</p>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="img/testimonials-1.png" alt="PG">
-                                </div>
-                                <div class="media-body">
-                                    <h4>Pedro Calvo</h4>
-                                    <h5>Consultor especialista</h5>
+                                    <h4 id="testimonial-name3"></h4>
+                                    <h5 id="testimonial-title3">Att. Cliente y contratación</h5>
                                 </div>
                             </div>
                         </div>
@@ -284,10 +270,10 @@
                     <div class="container">
                         <div class="col-sm-3 col-xs-6">
                             <aside class="f_widget about_widget">
-                                <img src="img/footer-logo.png" alt="">
+                                <img src="img/logo-white.png" alt="">
                                 <a href="tel:+34910059747"><h4>(+34) 666 000 000</h4></a>
                                 <a href="mailto:luismi@fakemail.com"><h5>luismi@fakemail.com</h5></a>
-                                <p>© Consultoría RGPD<script>document.write(new Date().getFullYear());</script>.<br/> Todos los derechos reservados.</p>
+                                <p>&copy; Consultoría RGPD <script>document.write(new Date().getFullYear());</script>.<br/> Todos los derechos reservados.</p>
                             </aside>
                         </div>
                         <div class="col-sm-3 col-xs-6">
@@ -340,7 +326,7 @@
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/jquery.color-2.1.2.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

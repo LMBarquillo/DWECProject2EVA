@@ -3628,7 +3628,7 @@ i:before {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url(../img/testimonials/testi-bg.png) no-repeat scroll center center;
+  
   background-size: cover;
   width: 995px;
   height: 250px;
@@ -3662,16 +3662,6 @@ i:before {
   padding-bottom: 25px;
 }
 
-.testimonial_slider .testimonial_item:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  height: 205px;
-  width: 1px;
-  position: absolute;
-  right: -113px;
-  top: 6px;
-}
-
 .testimonial_slider .testimonial_item p {
   padding-top: 6px;
   font-size: 18px;
@@ -3699,7 +3689,7 @@ i:before {
 }
 
 .testimonial_slider .testimonial_item .media .media-left img {
-  width: auto;
+  width: 50px;
 }
 
 .testimonial_slider .testimonial_item .media .media-body {
