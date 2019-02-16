@@ -4,7 +4,6 @@ var gente = [];
 $(document).ready(() => {
     // Primero cargamos los caretos, los incrustamos en el html y luego ponemos en marcha el slider
     cargarGente();
-
 });
 
 function cargarGente() {
@@ -23,7 +22,7 @@ function cargarGente() {
 
 function mostrarGente() {
     for(let i=1; i<=gente.length; i++) {
-        let data = gente[i-1].results[0];
+		let data = gente[i-1].results[0];
 
         $("#testimonial"+i).attr("src", data.picture.large);
         $("#testimonial-name"+i).html(data.name.first.toUpperCase() + ' ' + data.name.last.toUpperCase());

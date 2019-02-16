@@ -1609,18 +1609,6 @@ i:before {
   transition: all 300ms linear 0s;
 }
 
-.banner_area .banner_inner ul li a:before {
-  content: "\f105";
-  font: normal normal normal 14px/1 FontAwesome;
-  position: absolute;
-  right: -16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #fff;
-}
-
 .banner_area .banner_inner ul li:last-child {
   margin-right: 0px;
 }
@@ -5811,22 +5799,22 @@ i:before {
 	height: 90px;
 }
 .bcontacto {
-	background: url(../img/banner/banner-contacto.jpg) no-repeat scroll center center;
+	background: url(../img/banner-contacto.jpg) no-repeat scroll center center;
 }
 .bnosotros {
-	background: url(../img/banner/banner-nosotros.jpg) no-repeat scroll center center;
+	background: url(../img/banner-nosotros.jpg) no-repeat scroll center right;
 }
 .bpartners {
-	background: url(../img/banner/banner-partners.jpg) no-repeat scroll center center;
+	background: url(../img/banner-partners.jpg) no-repeat scroll center right;
 }
 .bfaq {
-	background: url(../img/banner/banner-faq.jpg) no-repeat scroll center center;
+	background: url(../img/banner-faq.jpg) no-repeat scroll center right;
 }
 .bservicios {
-	background: url(../img/banner/banner-servicios.jpg) no-repeat scroll center center;
+	background: url(../img/banner-servicios.jpg) no-repeat scroll center right;
 }
 .bherramientas {
-	background: url(../img/banner/banner-gears.jpg) no-repeat scroll center center;
+	background: url(../img/banner-gears.jpg) no-repeat scroll center right;
 }
 
 .originalcolor {
@@ -5911,4 +5899,8 @@ i:before {
 }
 #formerror > p {
 	font-weight: bold;
+}
+.breadcrumb-chevron {
+  color: white;
+  margin-left: 25px;
 }
