@@ -5908,3 +5908,16 @@ i:before {
   right: 0;
   left: auto;
 }
+/* Unos arreglillos al css horrible de jquery-ui */
+.ui-accordion .ui-accordion-header {
+  font: 600 16px/25px "Montserrat", sans-serif;
+  background-color: #ddd;
+  border-color: #ccc;
+}
+.ui-accordion-header:hover, .ui-accordion-header-active {
+  color: #235A91;
+}
+.ui-accordion .ui-accordion-content {
+  background-color: #f2f2f2;
+  border-color: #ccc;
+}
