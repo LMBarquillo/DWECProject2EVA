@@ -5794,6 +5794,7 @@ i:before {
   font-family: "Montserrat", sans-serif;
 }
 
+
 /* CLASES PROPIAS */
 .header_top {
 	height: 90px;
@@ -5908,6 +5909,7 @@ i:before {
   right: 0;
   left: auto;
 }
+
 /* Unos arreglillos al css horrible de jquery-ui */
 .ui-accordion .ui-accordion-header {
   font: 600 16px/25px "Montserrat", sans-serif;
