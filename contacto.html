@@ -77,60 +77,64 @@
         </header>
 
         <!--================ Banner =================-->
-        <section class="banner_area bnosotros">
+        <section class="banner_area bcontacto">
             <div class="container">
                 <div class="banner_inner">
-                    <h2>Nuestro equipo</h2>
+                    <h2>Contacta con nosotros</h2>
                     <ul>
                         <li><a href="index.html">Inicio</a><i class="fas fa-chevron-right breadcrumb-chevron"></i></li>
-                        <li class="active"><a href="#">Nuestro equipo</a></li>
+                        <li class="active"><a href="#">Contacto</a></li>
                     </ul>
                 </div>
             </div>
-        </section>		
-        
-        <section class="our_advisor_area_two pad_100">
+        </section>
+
+        <section class="contact_us_area pad_100">
             <div class="container">
-                <div class="left_title">
-                    <h2>Un equipo profesional</h2>
-                    <p>Contamos con una extensa plantilla que para nosotros es síntoma de evolución en nuetro negocio. Profesionales de diversos ámbitos: consultores, expertos en seguridad informática, auditores, juristas y personal de atención al cliente, que se mantienen continuamente formados para ofrecer a las empresas un servicio cómodo y seguro.</p>
+                <div class="c_left_title">
+                    <h2>Te llamamos sin compromiso.</h2>
                 </div>
-                
-                <div class="row m0 advisor_inner">
-                    <div class="col-md-3 col-xs-6">
-                        <div class="practice_item">
-                            <div class="p_img_inner">
-                                <img id="expert-img1" src="" alt="">
-                            </div>
-                            <h4 id="expert-name1"></h4>
-                            <h6>Dirección, jurídico y DPO</h6>
+                <div class="row contact_inner">
+                    <div class="col-md-6">
+                        <div class="querry_contact">
+                            <form class="contact_us_form row" action="javascript:contacto();" method="post" id="contactForm" novalidate="novalidate">
+                                <?php $contacto=true; ?>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="contact_nombre" name="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="email" class="form-control" id="contact_email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <input type="text" class="form-control" id="contact_localidad" name="localidad" placeholder="Localidad">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" id="contact_tlfn" name="tlfn" placeholder="Teléfono">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" name="mensaje" id="contact_mensaje" rows="1" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button id="contact_submit" type="submit" value="submit" class="btn submit_btn form-control">Enviar</button>
+                                    <div id="formerror"></div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="practice_item">
-                            <div class="p_img_inner">
-                                <img id="expert-img2" src="" alt="">
+                    <div class="col-md-4 col-md-offset-2">
+                        <div class="contact_address">
+                            <div class="c_address_item">
+                                <h5>Dirección:</h5>
+                                <p>Avda. Real Fábrica de Sedas <br />45600 Talavera de la Reina</p>
                             </div>
-                            <h4 id="expert-name2"></h4>
-                            <h6>Tecnologías de la Información</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="practice_item">
-                            <div class="p_img_inner">
-                                <img id="expert-img3" src="" alt="">
+                            <div class="c_address_item">
+                                <h5>Teléfono:</h5>
+                                <a href="tel:666000000">666 000 000</a>
                             </div>
-                            <h4 id="expert-name3"></h4>
-                            <h6>Atención al Cliente</h6>
-                        </div>
-                    </div>										
-                    <div class="col-md-3 col-xs-6">
-                        <div class="practice_item">
-                            <div class="p_img_inner">
-                                <img id="expert-img4" src="" alt="">
+                            <div class="c_address_item">
+                                <h5>email:</h5>
+                                <a href="mailto:luismi@fakemail.com">luismi@fakemail.com</a>
                             </div>
-                            <h4 id="expert-name4"></h4>
-                            <h6>Marketing y difusión</h6>
                         </div>
                     </div>
                 </div>
@@ -199,7 +203,6 @@
 		<script src="js/jquery.color-2.1.2.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/scriptteam.js"></script>
         <script src="js/newsletter.js"></script>
 	</body>
 </html>
