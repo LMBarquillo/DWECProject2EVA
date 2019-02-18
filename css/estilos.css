@@ -5904,3 +5904,7 @@ i:before {
   color: white;
   margin-left: 25px;
 }
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
