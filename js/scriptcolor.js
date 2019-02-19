@@ -15,7 +15,7 @@ $(document).ready(() => {
         let palette = event.currentTarget;
         let color = palette.getAttribute("data-color");
         setColor(color);
-        location.reload(); 
+        $("#estilo").attr("href","css/" + color + ".css");
     });
 });
 
