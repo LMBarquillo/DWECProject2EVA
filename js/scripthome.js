@@ -1,4 +1,4 @@
-const API = "https://randomuser.me/api/?results=3";
+const API = "https://randomuser.me/api/?results=3&nat=ES";
 var gente = [];
 
 $(document).ready(() => {
