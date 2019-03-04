@@ -2,6 +2,7 @@ $(document).ready(() => {
     $("#contact_submit").click(function(event) {
         let mailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
 
+        // Utilizo acceso por query selector, ya que realizaré la validación con el API html5.
         let email = document.querySelector("#contact_email");
         let nombre = document.querySelector("#contact_nombre");
         let localidad = document.querySelector("#contact_localidad");
