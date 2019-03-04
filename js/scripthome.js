@@ -1,4 +1,4 @@
-const API = "https://randomuser.me/api/";
+const API = "https://randomuser.me/api/?results=3";
 var gente = [];
 
 $(document).ready(() => {
@@ -8,21 +8,19 @@ $(document).ready(() => {
 
 function cargarGente() {
 	// Cargamos 4 individuos del api.
-	for(let i=0; i<4; i++) {
-		fetch(API).then(result => {
-			return result.json();
-		}).catch(error => {
-			console.log(error);
-		}).then(data => {
-			gente.push(data);
-            mostrarGente();
-		});
-	}	
+	fetch(API).then(result => {
+		return result.json();
+	}).catch(error => {
+		console.log(error);
+	}).then(data => {
+		gente = data.results;
+        mostrarGente();
+	});
 }
 
 function mostrarGente() {
     for(let i=1; i<=gente.length; i++) {
-		let data = gente[i-1].results[0];
+		let data = gente[i-1];
 
         $("#testimonial"+i).attr("src", data.picture.large);
         $("#testimonial-name"+i).html(data.name.first.toUpperCase() + ' ' + data.name.last.toUpperCase());
